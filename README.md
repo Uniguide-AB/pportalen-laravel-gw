@@ -25,7 +25,7 @@ PPORTALEN_ACCESS_TOKEN=YYYYY
 
 1. Non authenticated users should be redirected to `https://personal.uniguide.se/login?app=<PPORTALEN_APP_ID>`
 2. After a succesful login a GET request is made to `https://<app-callback-url>?tmpToken=<TmpToken>`
-3. The callback endpoint can resolve `Gateway::resolveToken('<TmpToken>')`
+3. The callback endpoint can resolve `Gateway::resolveToken('<TmpToken>')` for a short period of time
 
 
 ### Example implementation
