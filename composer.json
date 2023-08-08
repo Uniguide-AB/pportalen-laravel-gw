@@ -1,0 +1,23 @@
+{
+  "name": "uniguide/pportalen-laravel-gw",
+  "description": "A wrapper for php-46elks",
+  "type": "library",
+  "require": {
+    "php": "^7.1",
+    "laravel/framework": "^5.8",
+    "guzzle/guzzle": "^6.3"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tariqul Islam",
+      "email": "tarre@uniguide.se"
+    }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "Uniguide\\Pportalen\\": "src/"
+    }
+  }
+}
