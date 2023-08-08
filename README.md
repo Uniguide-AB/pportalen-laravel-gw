@@ -10,7 +10,7 @@
 
 ```php
     'pportalen' => [
-        'endpoint' => env('PPORTALEN_ENDPOINT', 'https://api.personal.uniguide.se/v1'),
+        'endpoint' => env('PPORTALEN_ENDPOINT', 'https://api.personal.uniguide.se/v1/'),
         'app_id' => env('PPORTALEN_APP_ID'), // public
         'access_token' => env('PPORTALEN_ACCESS_TOKEN'), // secret
     ]
