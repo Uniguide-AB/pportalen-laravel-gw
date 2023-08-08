@@ -1,6 +1,6 @@
 ## Pre-reqs
-* PHP 7.1
-* Laravel 5.8
+* at least PHP 7.1
+* at least Laravel 5.8
 ## Installation
 
 1. install with composer `composer require uniguide/pportalen-laravel-gw`
