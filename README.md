@@ -4,9 +4,7 @@
 ## Installation
 
 1. install with composer `composer require uniguide/pportalen-laravel-gw`
-
-
-2. Edit `config\services.php` and add
+2. Edit `config\services.php`
 
 ```php
     'pportalen' => [
@@ -16,6 +14,12 @@
     ]
 ```
 
+3. Add these to `.env`
+
+```
+PPORTALEN_APP_ID=XXXXX
+PPORTALEN_ACCESS_TOKEN=YYYYY
+```
 
 ## Authentication flow
 
