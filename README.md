@@ -38,7 +38,7 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use GuzzleHttp\Exception\RequestException;
 use Uniguide\Pportalen\Gateway as PPGateway;
-use \Illuminate\Http\Request;
+use Illuminate\Http\Request;
 
 class PPAuthController
 {
@@ -147,4 +147,29 @@ class Kernel extends ConsoleKernel
     //...
 }
 
+```
+## Webhooks
+```php
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\User;
+use GuzzleHttp\Exception\RequestException;
+use Uniguide\Pportalen\Gateway as PPGateway;
+use Illuminate\Http\Request;
+use Uniguide\Pportalen\DataTransferObjects\UserDTO;
+
+class PPAuthController
+{
+    public function __invoke(Request $request)
+    {
+        $webHookDTO = new WebhookDTO($request->all());
+        switch($webHookDTO->event_name){
+            case "UserCreated":
+               /// do stuff
+            break;
+        }
+    }
+}
 ```
