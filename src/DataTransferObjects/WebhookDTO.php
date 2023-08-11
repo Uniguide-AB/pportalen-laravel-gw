@@ -7,7 +7,7 @@ class WebhookDTO
     /*
      * @var string
      */
-    public $id;
+    public $application_id;
     /*
     * Possible values
     * UserCreated
