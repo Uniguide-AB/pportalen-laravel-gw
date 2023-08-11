@@ -7,7 +7,7 @@ class ResolvedTokenDTO
     /*
      * @var int
      */
-    public $employee_num,ber;
+    public $employee_number;
     /*
      * @var string|null
      */
