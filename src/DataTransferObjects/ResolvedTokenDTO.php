@@ -4,7 +4,10 @@ namespace Uniguide\Pportalen\DataTransferObjects;
 
 class ResolvedTokenDTO
 {
-
+    /*
+     * @var int
+     */
+    public $employee_num,ber;
     /*
      * @var string|null
      */
