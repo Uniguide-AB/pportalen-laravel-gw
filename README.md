@@ -158,7 +158,7 @@ use App\Models\User;
 use GuzzleHttp\Exception\RequestException;
 use Uniguide\Pportalen\Gateway as PPGateway;
 use Illuminate\Http\Request;
-use Uniguide\Pportalen\DataTransferObjects\UserDTO;
+use Uniguide\Pportalen\DataTransferObjects\WebhookDTO;
 
 class PPAuthController
 {
