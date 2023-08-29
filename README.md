@@ -173,3 +173,19 @@ class PPAuthController
     }
 }
 ```
+
+### Available Events
+
+```php
+enum AppApiDispatchableEvent {
+
+    case UserCreated; // User is created for the first time
+    case UserRestored; // Previously missing user has been restored
+    case UserMissing; // User is missing, soft deleted.
+    case UserRoleChanged; // is_administrator or is_developer changed
+    case DepartmentCreated;
+    case DepartmentUpdated;
+    case DepartmentDeleted;
+}
+
+```
