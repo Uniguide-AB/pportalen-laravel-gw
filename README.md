@@ -124,8 +124,7 @@ class SyncUsersJob implements ShouldQueue
     }
 }
 ```
-
-or trigger a full sync with `PPGateway::triggerFullSync()` it will send all departments and all users
+``
 
 In `app\Console\Kernel.php`
 
@@ -150,6 +149,7 @@ class Kernel extends ConsoleKernel
 }
 
 ```
+
 ## Webhooks
 ```php
 <?php
@@ -191,3 +191,16 @@ enum AppApiDispatchableEvent {
 }
 
 ```
+
+## Trigger a full sync
+
+Trigger a full sync of webhooks with 
+
+```php
+
+use Uniguide\Pportalen\Gateway as PPGateway;
+
+PPGateway::triggerFullSync();
+```
+
+`USerCreated` and `DepartmentCreated` will be triggered for every user and department available.
