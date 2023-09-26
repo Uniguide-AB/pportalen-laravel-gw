@@ -203,4 +203,4 @@ use Uniguide\Pportalen\Gateway as PPGateway;
 PPGateway::triggerFullSync();
 ```
 
-`USerCreated` and `DepartmentCreated` will be triggered for every user and department available.
+`UserCreated` and `DepartmentCreated` will be triggered for every user and department available.
