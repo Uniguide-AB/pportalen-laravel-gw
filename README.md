@@ -125,6 +125,8 @@ class SyncUsersJob implements ShouldQueue
 }
 ```
 
+or trigger a full sync with `PPGateway::triggerFullSync()` it will send all departments and all users
+
 In `app\Console\Kernel.php`
 
 ```php
