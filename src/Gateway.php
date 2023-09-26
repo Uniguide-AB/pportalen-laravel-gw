@@ -41,6 +41,11 @@ class Gateway
         return self::withClient()->get($url);
     }
 
+    protected static function post($url): ResponseInterface
+    {
+        return self::withClient()->post($url);
+    }
+
     public static function resolveToken(string $tmpToken): ResolvedTokenDTO
     {
         $res = self::withClient()->get(sprintf("application/%s/resolve-tmp-token/%s", config('services.pportalen.app_id'), $tmpToken));
@@ -72,5 +77,10 @@ class Gateway
             return new DepartmentDTO($row);
         }, self::jsonDecodeResponse($res)));
 
+    }
+
+    public static function triggerFullSync(): void
+    {
+        self::withClient()->post(sprintf("application/%s/trigger-full-sync", config('services.pportalen.app_id')));
     }
 }
